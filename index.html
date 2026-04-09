@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Jr | Ana Souza</title>
+  <meta name="description" content="Portfolio de uma desenvolvedora junior em busca da primeira oportunidade." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#inicio">Ana Souza</a>
+      <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="mainNav">
+        Menu
+      </button>
+      <nav id="mainNav" class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="tag">Desenvolvedora Front-end Junior</p>
+        <h1>Construindo experiencias digitais com foco em simplicidade</h1>
+        <p>
+          Sou uma profissional em inicio de carreira, com base em HTML, CSS e JavaScript.
+          Estou em busca da minha primeira oportunidade para crescer em equipe.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <button id="copyEmail" class="btn btn-light">Copiar e-mail</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Objetivo atual</h2>
+        <p>
+          Atuar em um time onde eu possa aprender boas praticas, participar de code review
+          e evoluir com projetos reais.
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container">
+      <h2>Sobre mim</h2>
+      <p>
+        Comecei estudando logica de programacao e depois migrei para desenvolvimento web.
+        Gosto de transformar ideias em interfaces claras, responsivas e organizadas.
+      </p>
+      <p>
+        Minha rotina de estudo inclui leitura de documentacao, pequenas entregas praticas e
+        melhoria de projetos pessoais.
+      </p>
+    </section>
+
+    <section id="habilidades" class="section container">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML semantico</li>
+            <li>CSS responsivo</li>
+            <li>JavaScript basico</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Git e GitHub</li>
+            <li>VS Code</li>
+            <li>Figma (basico)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Comunicacao clara</li>
+            <li>Organizacao</li>
+            <li>Vontade de aprender</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="section container">
+      <div class="section-head">
+        <h2>Projetos em destaque</h2>
+        <a class="small-link" href="https://github.com" target="_blank" rel="noopener noreferrer">Meu GitHub</a>
+      </div>
+      <div id="projectsList" class="projects-grid"></div>
+    </section>
+
+    <section id="contato" class="section container">
+      <h2>Contato</h2>
+      <p>Se voce procura alguem Jr com vontade de crescer, vamos conversar.</p>
+      <ul class="contact-list">
+        <li><strong>E-mail:</strong> <a id="emailLink" href="mailto:ana.souza@email.com">ana.souza@email.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/ana-souza</a></li>
+        <li><strong>Cidade:</strong> Cuiaba - MT</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com estudo e consistencia. <span id="currentYear"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
